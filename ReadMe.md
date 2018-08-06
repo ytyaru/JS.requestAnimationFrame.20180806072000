@@ -1,10 +1,10 @@
 ﻿# このソフトウェアについて
 
-JavaScriptでゲームループを作る。FPS制御がメイン。[demo]()
+JavaScriptのrequestAnimationFrame関数でメインループを作る。FPS算出する。[demo](https://ytyaru.github.io/JS.requestAnimationFrame.20180806072000/src/0/index.html)
 
 # 使い方
 
-ブラウザでindex.htmlファイルを開く。
+[demo](https://ytyaru.github.io/JS.requestAnimationFrame.20180806072000/src/0/index.html)を実行する。
 
 # 開発環境
 
