@@ -22,8 +22,7 @@ define(function() {
     C.Initialize = function() {
         C._Loop();
         C._requestId = window.requestAnimationFrame(C.Initialize); //戻り値を取得
-        window.onbeforeunload = function(e) { window.cancelAnimationFrame(C._requestId); alert("cancelAnimationFrame実行！"); }
-        return "cancelAnimationFrame実行！";
+        window.onbeforeunload = function(e) { window.cancelAnimationFrame(C._requestId); alert("cancelAnimationFrame実行！"); return "cancelAnimationFrame実行！"; }
     }
     return C;
 });
