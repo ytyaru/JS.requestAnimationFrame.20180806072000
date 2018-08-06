@@ -1,5 +1,5 @@
 define(function() {
-    var C = {};
+    let C = {};
     C._counter = 0;
     C._startTime = null;
     C._Loop = function() {
@@ -8,9 +8,9 @@ define(function() {
             C._startTime = new Date().getTime();
         }
         if(C._counter === 30){
-            end = new Date().getTime();
-            diff = end - C._startTime;
-            fps = C._counter / diff * 1000;
+            let end = new Date().getTime();
+            let diff = end - C._startTime;
+            let fps = C._counter / diff * 1000;
             C._Log("FPS:" + fps);
             C._counter = 0;
         }
