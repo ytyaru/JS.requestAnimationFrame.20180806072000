@@ -6,10 +6,9 @@ JavaScriptのrequestAnimationFrame関数でメインループを作る。FPS算�
 
 [demo](https://ytyaru.github.io/JS.requestAnimationFrame.20180806072000/src/0/index.html)を実行する。
 
-# 課題
+# イベント解放処理
 
-* `onbeforeunload`イベントが発火しない
-    * タブ閉じ、F5キー更新、window.close()で発火するはず [参考](https://qiita.com/zyufu_0tuka/items/3017c5bf82c8c9145fa7)
+タブ閉じ、F5キー更新で終了確認ダイアログが表示される。終了せず留まるとFPSアニメーションが停止する。これは`requestAnimationFrame`をキャンセルする`cancelAnimationFrame`関数によるものである。
 
 # 開発環境
 
